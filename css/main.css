@@ -219,12 +219,12 @@ p {
     to   { opacity: 1; }
 }
 
-.mail {
+.icon {
   font-size:2em;
   text-decoration: none;
 }
 
-.mail:hover {
+.icon:hover {
   text-decoration: none;
 }
 
