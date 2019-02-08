@@ -9,30 +9,30 @@ body, .card {
 
 body, a {
   font-family: 'Source Sans Pro', sans-serif;
-  color:lightgray;
+  color: lightgray;
 }
 
 h2 {
-  color:dodgerblue;
+  color: dodgerblue;
 }
 
 p {
-  font-size:1.3em;
+  font-size: 1.3em;
 }
 
 .row {
-  margin-top:10em;
-  position:relative;
+  margin-top: 10em;
+  position: relative;
 }
 
 .anchor {
-  position:absolute;
-  top:-5em;
+  position: absolute;
+  top: -5em;
 }
 
 .nav {
-  margin-top:1em;
-  margin-right:2em;
+  margin-top: 1em;
+  margin-right: 2em;
 }
 
 .skill {
@@ -56,7 +56,7 @@ p {
   border-color: coral;
 }
 
-.library{
+.library {
   border-color: #86BE91;
 }
 
@@ -93,17 +93,13 @@ p {
   background-color: #132f59;
 }
 
-.card-header{
+.card-header {
   background-color: #0e2444;
   text-align: center;
 }
 
-.col-3 {
-  padding:0;
-}
-
 .arrows {
-  margin-top:4em;
+  margin-top: 4em;
   position: absolute;
   margin-left: -30px;
 }
@@ -120,66 +116,66 @@ p {
 }
 
 @keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% { opacity: 0 }
+  40% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% { opacity: 0 }
+  40% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% { opacity: 0 }
+  40% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
 }
 
 /* Internet Explorer */
 @-ms-keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% { opacity: 0 }
+  40% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% { opacity: 0 }
+  40% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
 }
 
 .arrows path.a1 {
-  -webkit-animation-delay:-1s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation-delay:-1s; /* Firefox < 16 */
-      -ms-animation-delay:-1s; /* Internet Explorer */
-       -o-animation-delay:-1s; /* Opera < 12.1 */
-          animation-delay:-1s;
+  -webkit-animation-delay: -1s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation-delay: -1s; /* Firefox < 16 */
+      -ms-animation-delay: -1s; /* Internet Explorer */
+       -o-animation-delay: -1s; /* Opera < 12.1 */
+          animation-delay: -1s;
 }
 
 .arrows path.a2 {
-  -webkit-animation-delay:-0.5s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation-delay:-0.5s; /* Firefox < 16 */
-      -ms-animation-delay:-0.5s; /* Internet Explorer */
-       -o-animation-delay:-0.5s; /* Opera < 12.1 */
-          animation-delay:-0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation-delay: -0.5s; /* Firefox < 16 */
+      -ms-animation-delay: -0.5s; /* Internet Explorer */
+       -o-animation-delay: -0.5s; /* Opera < 12.1 */
+          animation-delay: -0.5s;
 }
 
 .arrows path.a3 {
-  -webkit-animation-delay:0s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation-delay:0s; /* Firefox < 16 */
-      -ms-animation-delay:0s; /* Internet Explorer */
-       -o-animation-delay:0s; /* Opera < 12.1 */
-          animation-delay:0s;
+  -webkit-animation-delay: 0s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation-delay: 0s; /* Firefox < 16 */
+      -ms-animation-delay: 0s; /* Internet Explorer */
+       -o-animation-delay: 0s; /* Opera < 12.1 */
+          animation-delay: 0s;
 }
 
 .fadein {
@@ -229,19 +225,41 @@ p {
 }
 
 .center {
-  text-align:center;
+  text-align: center;
+}
+
+.tint {
+  position: relative;
+  cursor: pointer;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10,25,47, 0.4);
+  transition: all .3s linear;
+}
+
+.tint:hover:before {
+  background: none;
 }
 
 @media (min-width: 768px) {
   .arrows {
-    margin-top:15em;
+    margin-top: 15em;
   }
 
   .nav {
-    margin-top:2em;
+    margin-top: 2em;
   }
 
   .label {
-    text-align:right;
+    text-align: right;
   }
 }
